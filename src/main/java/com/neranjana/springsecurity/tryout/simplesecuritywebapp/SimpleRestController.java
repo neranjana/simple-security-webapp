@@ -19,4 +19,14 @@ public class SimpleRestController {
 
         return "Good Evening";
     }
+    @RequestMapping(value="/night", method= RequestMethod.GET)
+    public String getNightGreeting() {
+
+        return "Good Night";
+    }
+    @RequestMapping(value="/day", method= RequestMethod.GET)
+    public String getDayGreeting() {
+
+        return "Good Day";
+    }
 }
